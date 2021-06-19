@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(90deg, #7d5fff, #7185e2);
-  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ body {
   padding: 15px;
   height: 50px;
   width: 50px;
-  transform: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .btn {
@@ -44,14 +44,14 @@ body {
 }
 
 .btn:focus,
-input:focus {
+.input:focus {
   outline: none;
 }
 
-.search.active .input{
-    width: 200px;
+.search.active .input {
+  width: 200px;
 }
 
-search.active btn{
-    transform: translateX(198px);
+.search.active .btn {
+  transform: translateX(198px);
 }
